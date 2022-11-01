@@ -76,6 +76,7 @@ function getXhr(): XMLHttpRequest {
 }
 
 function now(): number {
+    // @ts-ignore
     if (window.performance && window.performance.now) {
         // Use monotonic clock when available
         return performance.now();
